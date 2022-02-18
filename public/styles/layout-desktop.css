@@ -1,21 +1,28 @@
-@media (min-width: 769px) {
-  body {
-    background: url('../assets/mockups/desktop-no-back.svg') no-repeat;
-  }
-}
-
 /* Canvas */
 .canvas {
   position: relative;
 
-  width: 100%;
+  width: 1440px;
   height: 900px;
-  border: 1px solid teal;
+  margin: auto;
 }
 
 .canvas__photo {
-  /* display: none; */
   object-fit: cover;
+  border-radius: 24px;
+  box-shadow: 0 4px 14px 4px rgba(0, 0, 0, 0.25);
+}
+
+.canvas__overlay {
+  position: absolute;
+  top: 0;
+  left: 720px;
+
+  width: 50%;
+  height: 100%;
+  border-radius: 0 24px 24px 0;
+
+  background: rgba(0, 0, 0, 0.5);
 }
 
 /* Nav */
@@ -39,6 +46,8 @@
   font-family: 'Quicksand', sans-serif;
   font-size: 60px;
   font-weight: bold;
+
+  cursor: default;
 }
 
 .nav__menu {
@@ -55,7 +64,7 @@
   list-style-type: none;
 }
 
-.menu li {
+.menu a {
   display: block;
 
   color: white;
@@ -67,6 +76,19 @@
   text-decoration: none;
 }
 
+.menu a:link,
+.menu a:visited {
+  color: white;
+}
+
+.menu a:hover {
+  color: aqua;
+
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+
+  transform: scale(1.1);
+}
+
 .more-icon {
   display: flex;
   flex-flow: column nowrap;
@@ -75,6 +97,17 @@
   gap: 10px;
   min-width: 50px;
   height: 50px;
+
+  cursor: pointer;
+}
+
+.more-icon:hover .more-icon__bar-upper,
+.more-icon:hover .more-icon__bar-lower {
+  box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.5);
+
+  background-color: aqua;
+
+  transform: scale(1.1);
 }
 
 .more-icon__bar-upper,
@@ -91,4 +124,70 @@
 
 .more-icon__bar-lower {
   width: 35px;
+}
+
+/* Header */
+.header {
+  position: absolute;
+  top: 350px;
+  left: 421px;
+
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 33px;
+  align-items: center;
+}
+
+.header__title {
+  margin: 0;
+
+  color: white;
+
+  font-family: 'Mulish', sans-serif;
+  font-size: 250px;
+  font-weight: bold;
+  line-height: 200px;
+
+  cursor: default;
+}
+
+.header__caption {
+  margin: 0;
+
+  color: white;
+
+  font-family: 'Mulish', sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 45px;
+  text-transform: uppercase;
+
+  cursor: default;
+}
+
+.header__button {
+  height: 50px;
+  width: 180px;
+  padding: 15px 0;
+  border: none;
+  border-radius: 24px;
+
+  background-color: white;
+  color: black;
+
+  font-family: 'Mulish', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+
+  cursor: pointer;
+}
+
+.header__button:hover {
+  box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.5);
+
+  background-color: aqua;
+
+  transform: scale(1.05);
 }
