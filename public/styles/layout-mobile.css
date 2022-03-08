@@ -1,2 +1,15 @@
 @media (max-width: 768px) {
+  /* body {
+    background: url('../assets/mockup-mobile.svg') no-repeat;
+  } */
+
+  /* Canvas */
+  .canvas {
+    max-height: 100%;
+  }
+
+  .canvas__photo {
+    object-position: 9% center;
+    border-radius: 0;
+  }
 }
