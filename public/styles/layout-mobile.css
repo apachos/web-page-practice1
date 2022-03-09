@@ -24,4 +24,23 @@
     font-size: 140px;
     line-height: 90px;
   }
+
+  /* Nav */
+  .nav {
+    top: 5px;
+    left: 25px;
+    right: 27px;
+  }
+
+  .nav__header {
+    font-size: 30px;
+  }
+
+  .menu {
+    justify-content: flex-end;
+  }
+
+  .menu li:not(.more-icon) {
+    display: none;
+  }
 }

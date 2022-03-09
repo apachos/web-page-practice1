@@ -31,7 +31,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -28%);
+  transform: translate(-50%, -30%);
 
   display: flex;
   flex-flow: column nowrap;
@@ -98,11 +98,11 @@
   position: absolute;
   top: 55px;
   left: 53px;
+  right: 62px;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1325px;
   height: 75px;
 }
 
@@ -118,16 +118,13 @@
   cursor: default;
 }
 
-.nav__menu {
-  display: flex;
-  gap: 72px;
-  align-items: center;
-}
-
 .menu {
   display: flex;
-  gap: 72px;
-  padding: 0;
+  justify-content: space-between;
+  align-items: center;
+  width: 534px;
+  max-width: 534px;
+  padding: 0 0 0 40px;
 
   list-style-type: none;
 }
