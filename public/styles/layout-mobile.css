@@ -5,6 +5,8 @@
 
   /* Canvas */
   .canvas {
+    width: 100%;
+    min-height: 375px;
     max-height: 100%;
   }
 
@@ -15,5 +17,11 @@
 
   .canvas__overlay {
     border-radius: 0;
+  }
+
+  /* Header */
+  .header__title {
+    font-size: 140px;
+    line-height: 90px;
   }
 }

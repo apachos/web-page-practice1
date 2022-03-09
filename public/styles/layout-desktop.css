@@ -2,8 +2,7 @@
 .canvas {
   position: relative;
 
-  height: 100vh;
-  max-height: 900px;
+  height: 900px;
   margin: auto;
 }
 
@@ -25,6 +24,73 @@
   border-radius: 0 24px 24px 0;
 
   background: rgba(0, 0, 0, 0.5);
+}
+
+/* Header */
+.header {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -28%);
+
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 33px;
+  align-items: center;
+}
+
+.header__title {
+  margin: 0;
+
+  color: white;
+
+  font-family: 'Mulish', sans-serif;
+  font-size: 250px;
+  font-weight: bold;
+  line-height: 200px;
+
+  cursor: default;
+}
+
+.header__caption {
+  margin: 0;
+
+  color: white;
+
+  font-family: 'Mulish', sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 45px;
+  text-transform: uppercase;
+
+  cursor: default;
+}
+
+.header__button {
+  height: 50px;
+  width: 180px;
+  padding: 15px 0;
+  border: none;
+  border-radius: 24px;
+
+  background-color: white;
+  color: black;
+
+  font-family: 'Mulish', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+
+  cursor: pointer;
+}
+
+.header__button:hover {
+  box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.5);
+
+  background-color: aqua;
+
+  transform: scale(1.05);
 }
 
 /* Nav */
@@ -126,70 +192,4 @@
 
 .more-icon__bar-lower {
   width: 35px;
-}
-
-/* Header */
-.header {
-  position: absolute;
-  top: 350px;
-  left: 421px;
-
-  display: flex;
-  flex-flow: column nowrap;
-  gap: 33px;
-  align-items: center;
-}
-
-.header__title {
-  margin: 0;
-
-  color: white;
-
-  font-family: 'Mulish', sans-serif;
-  font-size: 250px;
-  font-weight: bold;
-  line-height: 200px;
-
-  cursor: default;
-}
-
-.header__caption {
-  margin: 0;
-
-  color: white;
-
-  font-family: 'Mulish', sans-serif;
-  font-size: 36px;
-  font-weight: bold;
-  line-height: 45px;
-  text-transform: uppercase;
-
-  cursor: default;
-}
-
-.header__button {
-  height: 50px;
-  width: 180px;
-  padding: 15px 0;
-  border: none;
-  border-radius: 24px;
-
-  background-color: white;
-  color: black;
-
-  font-family: 'Mulish', sans-serif;
-  font-size: 18px;
-  font-weight: bold;
-  text-decoration: none;
-  text-align: center;
-
-  cursor: pointer;
-}
-
-.header__button:hover {
-  box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.5);
-
-  background-color: aqua;
-
-  transform: scale(1.05);
 }
