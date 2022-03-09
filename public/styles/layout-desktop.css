@@ -18,7 +18,7 @@
 .canvas__overlay {
   position: absolute;
   top: 0;
-  left: 720px;
+  right: 0;
 
   width: 50%;
   height: 100%;
