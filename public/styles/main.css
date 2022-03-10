@@ -18,5 +18,9 @@ html {
 
 body {
   display: flex;
+  justify-content: center;
+  min-width: 370px;
+  max-width: 1440px;
   height: 100vh;
+  margin: auto;
 }
