@@ -24,21 +24,23 @@
     <div class="canvas">
       <img class="canvas__photo" src="assets/india-gate.svg" />
       <div class="canvas__overlay"></div>
+
       <header class="header">
         <h1 class="header__title">India</h1>
         <p class="header__caption">Delhi India Gate</p>
         <a class="header__button" href="#">Explore</a>
       </header>
+
       <nav class="nav">
         <h2 class="nav__header">Travel</h2>
+        <input id="nav__toggle" type="checkbox" />
         <ul class="menu">
+          <li class="menu__hamburger">
+            <label class="hamburger" for="nav__toggle"></label>
+          </li>
           <li><a href="#">Home</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Contact</a></li>
-          <li class="more-icon">
-            <div class="more-icon__bar-upper"></div>
-            <div class="more-icon__bar-lower"></div>
-          </li>
         </ul>
       </nav>
     </div>

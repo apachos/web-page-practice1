@@ -118,6 +118,10 @@
   cursor: default;
 }
 
+#nav__toggle {
+  display: none;
+}
+
 .menu {
   display: flex;
   justify-content: space-between;
@@ -154,7 +158,20 @@
   transform: scale(1.1);
 }
 
-.more-icon {
+.menu__hamburger {
+  order: 100;
+}
+
+.menu__hamburger:hover .hamburger::before,
+.menu__hamburger:hover .hamburger::after {
+  box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.5);
+
+  background-color: aqua;
+
+  transform: scale(1.1);
+}
+
+.hamburger {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -166,27 +183,19 @@
   cursor: pointer;
 }
 
-.more-icon:hover .more-icon__bar-upper,
-.more-icon:hover .more-icon__bar-lower {
-  box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.5);
-
-  background-color: aqua;
-
-  transform: scale(1.1);
-}
-
-.more-icon__bar-upper,
-.more-icon__bar-lower {
+.hamburger::before,
+.hamburger::after {
   height: 5px;
   border-radius: 10px;
 
   background-color: white;
+  content: '';
 }
 
-.more-icon__bar-upper {
+.hamburger::before {
   width: 50px;
 }
 
-.more-icon__bar-lower {
+.hamburger::after {
   width: 35px;
 }

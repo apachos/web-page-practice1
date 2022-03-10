@@ -37,10 +37,21 @@
   }
 
   .menu {
-    justify-content: flex-end;
+    flex-flow: column nowrap;
+    align-items: flex-end;
+    align-self: flex-start;
+    height: 200px;
   }
 
-  .menu li:not(.more-icon) {
+  .menu li:not(.menu__hamburger) {
     display: none;
+  }
+
+  .menu__hamburger {
+    order: -1;
+  }
+
+  #nav__toggle:checked + .menu li:not(.more-icon) {
+    display: block;
   }
 }
