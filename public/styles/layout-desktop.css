@@ -37,6 +37,7 @@
   flex-flow: column nowrap;
   gap: 33px;
   align-items: center;
+  /* align-items: flex-end; */
 }
 
 .header__title {
@@ -99,9 +100,11 @@
   top: 55px;
   left: 53px;
   right: 62px;
+  /* right: -62px; */
 
   display: flex;
   justify-content: space-between;
+  /* justify-content: flex-end; */
   align-items: center;
   height: 75px;
 }
